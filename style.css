@@ -188,3 +188,53 @@ button {
     flex-direction: column;
   }
 }
+
+/* toggle thing */
+.flex {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* whole header looks clickable */
+  user-select: none;
+}
+
+.flex button {
+  margin-right: 0.5em;
+}
+
+/* .content {
+  display: none;
+  margin-left: 1.8em;
+}
+
+.toggle-header.active button {
+  transform: rotate(90deg);
+} */
+
+/* ===== Smooth toggle effect ===== */
+.toggle-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  gap: 0.5em;
+}
+
+.toggle-header button {
+  transition: transform 0.3s ease;
+  color: var(--clr-accents);
+}
+
+/* Rotate the arrow when active */
+.toggle-header.active button {
+  transform: rotate(90deg);
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  margin-left: 1.8em;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+/* open state will be handled by inline JS styles */
