@@ -33,8 +33,9 @@ header {
   margin: 0 auto;
   background-color: rgb(14, 14, 14);
   border: 1px solid lightskyblue;
-  border-radius: 5px 5px 0 0;
   border-bottom: none;
+  border-radius: 5px 5px 0 0;
+
   padding: 10px;
   color: lightskyblue;
 }
