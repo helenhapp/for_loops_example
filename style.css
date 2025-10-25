@@ -5,10 +5,70 @@
 }
 
 body {
-  /* background-color: blueviolet; */
   background: url("images/space.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100dvh;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 17px;
+  font-family: system-ui, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(237, 235, 243);
+}
+
+header,
+main {
+  max-width: 70%;
+}
+
+header {
+  margin: 0 auto;
+  background-color: rgb(14, 14, 14);
+  border: 1px solid lightblue;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  padding: 10px;
+}
+
+main {
+  background-color: rgba(15, 15, 16, 0.75);
+  border: 1px solid lightblue;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+p {
+  margin: 10px 0;
+}
+
+section {
+  border-bottom: 1px solid lightblue;
+  padding: 10px 20px;
+}
+
+section:last-of-type {
+  border: 0;
+}
+
+@media (max-width: 400px) {
+  header,
+  main {
+    max-width: 98%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  header,
+  main {
+    max-width: 80%;
+  }
 }
