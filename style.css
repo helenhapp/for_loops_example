@@ -216,7 +216,7 @@ button {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  margin-left: 1.8em;
+  margin-left: 1em;
   transition: max-height 0.35s ease, opacity 0.25s ease;
 }
 
