@@ -46,49 +46,57 @@
           <h1>⭒.⋆ Тема 6 ⋆˚.</h1>
         </div>
       </div>
+
+      <!-- === Navigation Buttons === -->
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="for">for loops</button>
+        <button class="tab-btn" data-tab="while">while loops</button>
+        <button class="tab-btn" data-tab="functions">functions</button>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <div class="flex">
-          <button>▶</button>
-          <h2>1: Цикл <span class="accent">for</span></h2>
-        </div>
+      <div class="tab-content active" id="tab-for">
+        <section>
+          <div class="flex">
+            <button>▶</button>
+            <h2>1: Цикл <span class="accent">for</span></h2>
+          </div>
+          <div id="part1" class="hidden">
+            <p>...</p>
+            <h3>Приклад 1:</h3>
+            <pre><code id="snippet1" class="language-javascript"></code></pre>
+          </div>
+        </section>
+      </div>
 
-        <div id="part1" class="hidden">
-          <p>...</p>
+      <div class="tab-content" id="tab-while">
+        <section>
+          <div class="flex">
+            <button>▶</button>
+            <h2>2: Цикл <span class="accent">while</span></h2>
+          </div>
+          <div id="part2" class="hidden">
+            <p>...</p>
+            <h3>Приклад 1:</h3>
+            <pre><code id="snippet2" class="language-javascript"></code></pre>
+          </div>
+        </section>
+      </div>
 
-          <h3>Приклад 1:</h3>
-          <pre><code id="snippet1" class="language-javascript"></code></pre>
-        </div>
-      </section>
+      <div class="tab-content" id="tab-functions">
+        <section>
+          <div class="flex">
+            <button>▶</button>
+            <h2>3: Функції (<span class="accent">function</span>)</h2>
+          </div>
+          <div id="part3" class="hidden">
+            <p>...</p>
+          </div>
+        </section>
+      </div>
 
-      <section>
-        <div class="flex">
-          <button>▶</button>
-          <h2>2: Цикл <span class="accent">while</span></h2>
-        </div>
-
-        <div id="part2" class="hidden">
-          <p>...</p>
-
-          <h3>Приклад 1:</h3>
-          <pre><code id="snippet2" class="language-javascript"></code></pre>
-        </div>
-      </section>
-
-      <section>
-        <div class="flex">
-          <button>▶</button>
-          <h2>3: Функції (<span class="accent">function</span>)</h2>
-        </div>
-
-        <div id="part3" class="hidden">
-          <p>...</p>
-        </div>
-      </section>
-
-      <section>
+      <!-- <section>
         <div class="flex">
           <button>▶</button>
           <h2>4: Стрілочні функції (<span class="accent">=></span>)</h2>
@@ -108,7 +116,7 @@
         <div id="part5" class="hidden">
           <p>...</p>
         </div>
-      </section>
+      </section> -->
     </main>
   </body>
 </html>
