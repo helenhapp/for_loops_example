@@ -18,7 +18,7 @@ body {
   background: url("images/space.jpg") center / cover no-repeat;
   font: 17px / 1.6 system-ui, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 1px;
-  color: rgb(237, 235, 243);
+  color: rgb(232, 239, 228);
 }
 
 .hidden {
@@ -63,7 +63,7 @@ main {
 header {
   padding: 10px;
   color: var(--clr-title);
-  background-color: rgb(14, 14, 14);
+  background-color: rgb(15, 15, 15);
   border: 1px solid var(--clr-borders);
   border-bottom: none;
   border-radius: 5px 5px 0 0;
@@ -71,7 +71,7 @@ header {
 
 main {
   padding-bottom: 5px;
-  background-color: rgba(15, 15, 16, 0.75);
+  background-color: rgba(18, 19, 18, 0.75);
   border: 1px solid var(--clr-borders);
   border-radius: 0 0 5px 5px;
 }
