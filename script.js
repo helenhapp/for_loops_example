@@ -7,10 +7,12 @@ document.querySelectorAll("section").forEach((section) => {
   });
 });
 
-document.getElementById(
-  "snippet1"
-).innerHTML = `// This is a sample JS code snippet
-function greet(name) {
-  console.log("Hello, " + name + "!");
-}
-greet("Olena");`;
+document.getElementById("snippet1").innerHTML = `for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}`;
+
+document.getElementById("snippet2").innerHTML = `let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}`;
