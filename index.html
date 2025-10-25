@@ -4,6 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тема 6</title>
+
+    <!-- Prism CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-twilight.css"
+      rel="stylesheet"
+    />
+    <!-- Prism JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"
+      defer
+    ></script>
+    <!-- Include the language you want (JS here) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"
+      defer
+    ></script>
+    <!-- Toolbar and copy-to-clipboard plugin -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"
+      defer
+    ></script>
+    <!-- Toolbar CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -12,35 +43,67 @@
     <header>
       <div class="typewriter">
         <div>
-          <h1>Тема 6</h1>
+          <h1>⭒.⋆ Тема 6 ⋆˚.</h1>
         </div>
       </div>
     </header>
 
     <main>
       <section>
-        <h2>✦ 1: Цикл <span class="blue">for</span></h2>
-        <p>...</p>
+        <div class="flex">
+          <button>▶</button>
+          <h2>1: Цикл <span class="accent">for</span></h2>
+        </div>
+
+        <div id="part1" class="hidden">
+          <p>...</p>
+
+          <pre><code id="snippet1" class="language-javascript"></code></pre>
+        </div>
       </section>
 
       <section>
-        <h2>✦ 2: Цикл <span class="blue">while</span></h2>
-        <p>...</p>
+        <div class="flex">
+          <button>▶</button>
+          <h2>2: Цикл <span class="accent">while</span></h2>
+        </div>
+
+        <div id="part2" class="hidden">
+          <p>...</p>
+        </div>
       </section>
 
       <section>
-        <h2>✦ 3: Функції (<span class="blue">function</span>)</h2>
-        <p>...</p>
+        <div class="flex">
+          <button>▶</button>
+          <h2>3: Функції (<span class="accent">function</span>)</h2>
+        </div>
+
+        <div id="part3" class="hidden">
+          <p>...</p>
+        </div>
       </section>
 
       <section>
-        <h2>✦ 4: Стрілочні функції (<span class="blue">=></span>)</h2>
-        <p>...</p>
+        <div class="flex">
+          <button>▶</button>
+          <h2>4: Стрілочні функції (<span class="accent">=></span>)</h2>
+        </div>
+
+        <div id="part4" class="hidden">
+          <p>...</p>
+        </div>
       </section>
 
       <section>
-        <h2>✦ 5: Атрибут <span class="blue">onclick=""</span></h2>
-        <p>...</p>
+        <div class="flex">
+          <button>▶</button>
+          <h2>5: Атрибут <span class="accent">onclick=""</span></h2>
+        </div>
+
+        <div id="part5" class="hidden">
+          <p>...</p>
+        </div>
       </section>
     </main>
   </body>
