@@ -1,11 +1,15 @@
-/* ====== Root Colors ====== */
+/* =========================================================
+   Root Colors
+========================================================= */
 :root {
   --clr-borders: rgba(241, 232, 150, 0.915);
   --clr-accents: rgba(158, 187, 99, 0.908);
   --clr-title: rgba(240, 221, 112, 0.89);
 }
 
-/* ====== Reset and Base ====== */
+/* =========================================================
+   Reset & Base
+========================================================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +29,9 @@ body {
   display: none;
 }
 
-/* ====== Typography ====== */
+/* =========================================================
+   Typography
+========================================================= */
 h1,
 h2,
 h3 {
@@ -50,15 +56,17 @@ h3 {
   letter-spacing: 1px;
 }
 
-.accent {
-  color: var(--clr-accents);
-}
-
 p {
   margin: 10px 0;
 }
 
-/* ====== Layout ====== */
+.accent {
+  color: var(--clr-accents);
+}
+
+/* =========================================================
+   Layout
+========================================================= */
 header,
 main {
   max-width: 70%;
@@ -90,7 +98,9 @@ section:last-of-type {
   border-bottom: none;
 }
 
-/* ====== Buttons & Utilities ====== */
+/* =========================================================
+   Buttons & Utilities
+========================================================= */
 button {
   cursor: pointer;
   border: none;
@@ -104,7 +114,9 @@ button {
   gap: 1rem;
 }
 
-/* ====== Typewriter Animation ====== */
+/* =========================================================
+   Typewriter Animation
+========================================================= */
 .typewriter {
   display: flex;
   justify-content: center;
@@ -139,7 +151,9 @@ button {
   }
 }
 
-/* ===== Tabs ===== */
+/* =========================================================
+   Tabs
+========================================================= */
 .tabs {
   display: flex;
   justify-content: center;
@@ -169,48 +183,17 @@ button {
   font-weight: bold;
 }
 
-/* Hide inactive tabs */
 .tab-content {
   display: none;
 }
+
 .tab-content.active {
   display: block;
 }
 
-/* ====== Responsive ====== */
-@media (max-width: 600px) {
-  header,
-  main {
-    max-width: 98%;
-  }
-
-  .tabs {
-    flex-direction: column;
-  }
-}
-
-/* toggle thing */
-.flex {
-  display: flex;
-  align-items: center;
-  cursor: pointer; /* whole header looks clickable */
-  user-select: none;
-}
-
-.flex button {
-  margin-right: 0.5em;
-}
-
-/* .content {
-  display: none;
-  margin-left: 1.8em;
-}
-
-.toggle-header.active button {
-  transform: rotate(90deg);
-} */
-
-/* ===== Smooth toggle effect ===== */
+/* =========================================================
+   Toggle Headers (Expandable Sections)
+========================================================= */
 .toggle-header {
   display: flex;
   align-items: center;
@@ -224,7 +207,6 @@ button {
   color: var(--clr-accents);
 }
 
-/* Rotate the arrow when active */
 .toggle-header.active button {
   transform: rotate(90deg);
 }
@@ -237,4 +219,16 @@ button {
   transition: max-height 0.35s ease, opacity 0.25s ease;
 }
 
-/* open state will be handled by inline JS styles */
+/* =========================================================
+   Responsive
+========================================================= */
+@media (max-width: 600px) {
+  header,
+  main {
+    max-width: 98%;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+}
