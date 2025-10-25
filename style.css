@@ -18,6 +18,12 @@ body {
   color: rgb(237, 235, 243);
 }
 
+h1,
+h2,
+h3 {
+  font-family: monospace;
+}
+
 header,
 main {
   max-width: 70%;
@@ -26,7 +32,7 @@ main {
 header {
   margin: 0 auto;
   background-color: rgb(14, 14, 14);
-  border: 1px solid lightblue;
+  border: 1px solid lightskyblue;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
   padding: 10px;
@@ -44,7 +50,18 @@ h1 {
   text-align: center;
   letter-spacing: 3px;
   font-weight: 500;
-  /* font-style: italic; */
+  font-size: 1.6rem;
+  margin-inline: auto;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.blue {
+  color: deepskyblue;
 }
 
 p {
@@ -66,14 +83,18 @@ section:last-of-type {
 }
 
 .typewriter h1 {
-  font-family: monospace;
-  font-size: 1.5rem;
-  margin-inline: auto;
   overflow: hidden;
   white-space: nowrap;
   border-right: 1px solid;
-  animation: typing 2s steps(5) forwards, blink 1s 2s step-end 3,
+  animation: typing 2s steps(6) forwards, blink 1s 2s step-end 3,
     hide-cursor 0s 4.5s forwards;
+}
+
+@media (max-width: 600px) {
+  header,
+  main {
+    max-width: 98%;
+  }
 }
 
 @keyframes typing {
@@ -95,12 +116,5 @@ section:last-of-type {
 @keyframes hide-cursor {
   to {
     border-color: transparent;
-  }
-}
-
-@media (max-width: 600px) {
-  header,
-  main {
-    max-width: 98%;
   }
 }
