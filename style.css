@@ -139,10 +139,52 @@ button {
   }
 }
 
+/* ===== Tabs ===== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(14, 14, 14);
+  padding: 8px 0;
+}
+
+.tab-btn {
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--clr-borders);
+  color: var(--clr-accents);
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-family: monospace;
+  transition: 0.3s;
+}
+
+.tab-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+  background-color: var(--clr-accents);
+  color: black;
+  font-weight: bold;
+}
+
+/* Hide inactive tabs */
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
 /* ====== Responsive ====== */
 @media (max-width: 600px) {
   header,
   main {
     max-width: 98%;
+  }
+
+  .tabs {
+    flex-direction: column;
   }
 }
