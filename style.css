@@ -21,7 +21,7 @@ body {
   min-height: 100dvh;
   padding: 20px;
   background-color: black;
-  background: url("images/space.jpg") center / cover no-repeat;
+  background: url("images/space.jpg") center / cover no-repeat fixed;
   font: 17px / 1.6 system-ui, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 1px;
   color: rgb(232, 239, 228);
