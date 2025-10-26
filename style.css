@@ -273,7 +273,15 @@ ol {
 /* *******************************************************
    Адаптивність
 ********************************************************* */
-@media (max-width: 651px) {
+
+@media (min-width: 651px) and (max-width: 850px) {
+  header,
+  main {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 650px) {
   header,
   main {
     max-width: 98%;
@@ -285,12 +293,5 @@ ol {
 
   img {
     width: 100%;
-  }
-}
-
-@media (min-width: 651px) and (max-width: 800px) {
-  header,
-  main {
-    width: 80%;
   }
 }
