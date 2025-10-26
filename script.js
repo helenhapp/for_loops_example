@@ -56,3 +56,7 @@ tabButtons.forEach((btn) => {
     document.getElementById(`tab-${target}`).classList.add("active");
   });
 });
+
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
