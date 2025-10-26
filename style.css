@@ -75,6 +75,12 @@ pre {
   font-weight: 500;
 }
 
+img {
+  border: 2px inset black;
+  display: block;
+  /* max-width: 80%; */
+}
+
 /* =========================================================
    Layout
 ========================================================= */
@@ -242,6 +248,10 @@ button {
 
   .tabs {
     flex-direction: column;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
