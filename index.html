@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тема 6</title>
+    <title>Тема 7</title>
 
     <!-- === PrismJS Code Highlighting === -->
     <link
@@ -40,77 +40,266 @@
     <header>
       <div class="typewriter">
         <div>
-          <h1>⭒.⋆ Тема 6 ⋆˚.</h1>
+          <h1>⭒.⋆ Тема 7 ⋆˚.</h1>
         </div>
       </div>
 
-      <p><span class="accent">Цикли та Функції</span></p>
+      <p><span class="accent">Масиви</span></p>
 
       <!-- === Navigation Tabs === -->
       <nav class="tabs">
-        <button class="tab-btn active" data-tab="for">for loops</button>
-        <button class="tab-btn" data-tab="while">while loops</button>
-        <button class="tab-btn" data-tab="functions">functions</button>
+        <button class="tab-btn active" data-tab="array">
+          Масиви та індекси
+        </button>
+        <button class="tab-btn" data-tab="pushpop">push() та pop()</button>
+        <button class="tab-btn" data-tab="foreach">forEach()</button>
+        <button class="tab-btn" data-tab="splice">splice()</button>
       </nav>
     </header>
 
     <main>
       <!-- === Tab 1: for loops === -->
-      <div class="tab-content active" id="tab-for">
+      <div class="tab-content active" id="tab-array">
         <section>
           <div class="flex toggle-header">
             <button>▶</button>
-            <h2>1: Цикл <span class="accent">for</span></h2>
+            <h2>1: <span class="accent">Теорія</span></h2>
           </div>
+
           <div class="content">
-            <p>...</p>
-            <h3>Приклад 1:</h3>
-            <pre><code id="snippet1" class="language-javascript"></code></pre>
+            <h3>🚀 Що таке масиви та для чого потрібні</h3>
+            <p>
+              Масиви — це зручний спосіб зберігати багато значень у одній
+              змінній. Масив можна уявити як список або полицю з речами. Кожен
+              предмет має свій номер — індекс, за яким можна знайти або змінити
+              потрібний елемент.
+            </p>
+            <pre><code class="language-javascript">let fruits = ["apple", "banana", "orange"];</code></pre>
+            <p>
+              Тут ми створили масив fruits, у якому зберігаються три фрукти:
+              яблуко, банан і апельсин. Замість того щоб створювати окрему
+              змінну для кожного фрукта, ми можемо тримати їх усі разом у одному
+              масиві.
+            </p>
+
+            <h3>👾 Доступ до елементів та їх зміна</h3>
+            <p>
+              Кожен елемент у масиві має своє місце — це називається
+              <strong>індекс</strong>. Індекси починаються з <strong>0</strong>.
+              Щоб отримати або змінити елемент масиву, ми використовуємо його
+              індекс.
+            </p>
+            <pre><code class="language-javascript">console.log(fruits[0]); // "apple"</code></pre>
+            <p>
+              Щоб змінити елемент, присвоюємо нове значення за його індексом:
+            </p>
+            <pre><code class="language-javascript">fruits[1] = "kiwi"; 
+console.log(fruits); // ["apple", "kiwi", "orange"]</code></pre>
+
+            <h3>🛸 Довжина масиву (<span class="accent">.length</span>)</h3>
+            <p>
+              Ми можемо дізнатися, скільки елементів у масиві, використовуючи
+              властивість <span class="accent">.length</span>.
+            </p>
+            <pre><code class="language-javascript">console.log(fruits.length); // 3</code></pre>
+            <p>
+              Масив fruits має 3 елементи, тому в консолі нам виведеться
+              відповідь 3.
+            </p>
           </div>
         </section>
 
         <section>
           <div class="flex toggle-header">
             <button>▶</button>
-            <h2>2: Приклад другого циклу <span class="accent">for</span></h2>
+            <h2>2: <span class="accent">Завдання 1</span></h2>
           </div>
           <div class="content">
-            <p>...</p>
-            <h3>Приклад 2:</h3>
+            <ol>
+              <li>
+                Створити масив numbers з числовим значенням [10, 20, 30, 40,
+                50].
+              </li>
+              <li>
+                Використовуючи доступ до елементів, виведіть на консоль третє
+                значення масиву.
+              </li>
+              <li>Замініть друге значення масиву numbers на 100.</li>
+              <li>Виведіть довжину масиву numbers.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>3: <span class="accent">Завдання 2</span></h2>
+          </div>
+          <div class="content">
+            <ol>
+              <li>
+                Створити масив fruits з рядковими значенням ["apple", "banana",
+                "orange", "pineapple", "mango", "pear"].
+              </li>
+              <li>
+                Використовуючи доступ до елементів, виведіть на консоль друге
+                значення масиву.
+              </li>
+              <li>Замініть четверте значення масиву fruits на "peach".</li>
+              <li>Виведіть довжину масиву fruits.</li>
+            </ol>
           </div>
         </section>
       </div>
 
       <!-- === Tab 2: while loops === -->
-      <div class="tab-content" id="tab-while">
+      <div class="tab-content" id="tab-pushpop">
         <section>
           <div class="flex toggle-header">
             <button>▶</button>
-            <h2>1: Цикл <span class="accent">while</span></h2>
+            <h2>1: <span class="accent">Теорія</span></h2>
           </div>
+
           <div class="content">
             <p>...</p>
-            <h3>Приклад 1:</h3>
-            <pre><code id="snippet2" class="language-javascript"></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>2: <span class="accent">Завдання</span></h2>
+          </div>
+          <div class="content">
+            <ol>
+              <li>
+                За допомогою доступу до елементів, видаліть останнє значення в
+                масиві number. Виведіть оновлений масив.
+              </li>
+              <li>
+                За допомогою доступу до елементів, додайте в кінець масива
+                fruits нове значення ‘watermelon’. Виведіть оновлений масив.
+              </li>
+            </ol>
           </div>
         </section>
       </div>
 
       <!-- === Tab 3: functions === -->
-      <div class="tab-content" id="tab-functions">
+      <div class="tab-content" id="tab-foreach">
         <section>
           <div class="flex toggle-header">
             <button>▶</button>
-            <h2>3: Функції (<span class="accent">function</span>)</h2>
+            <h2>1: <span class="accent">Теорія</span></h2>
           </div>
+
           <div class="content">
             <p>...</p>
+          </div>
+        </section>
 
-            <h3>Приклад 1:</h3>
-            <pre><code id="snippet3" class="language-javascript"></code></pre>
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>2: <span class="accent">Завдання 1</span></h2>
+          </div>
+          <div class="content">
+            <p>Ітерація по масиву number:</p>
+            <ol>
+              <li>Виведіть всі елементи масиву на консоль</li>
+              <li>Виведіть суму всіх чисел</li>
+              <li>Знайдіть середнє арифметичне число у масиві</li>
+              <li>Знайти найбільше число в масиві, вивести ${index}</li>
+              <li>Знайти найменше число в масиві, вивести ${index}</li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>2: <span class="accent">Завдання 2</span></h2>
+          </div>
+          <div class="content">
+            <p>Ітерація по масиву fruits:</p>
+            <ol>
+              <li>Виведіть всі елементи масиву на консоль</li>
+              <li>Виведіть найкоротше слово в масиві, вивести ${index}</li>
+              <li>Виведіть найдовше слово в масиві, вивести ${index}</li>
+            </ol>
+          </div>
+        </section>
+      </div>
+
+      <!-- === Tab 4: functions === -->
+      <div class="tab-content" id="tab-splice">
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>1: <span class="accent">Теорія</span></h2>
+          </div>
+
+          <div class="content">
+            <p>...</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>2: <span class="accent">Завдання 1</span></h2>
+          </div>
+          <div class="content">
+            <p>
+              Масив: let gifts = ["шкарпетки", "шоколад", "ноутбук", "шампунь",
+              "книга"];
+            </p>
+            <ol>
+              <li>Видали 2 середні подарунки зі списку (ноутбук і шампунь).</li>
+              <li>Додай замість них "телефон" та "павербанк".</li>
+              <li>Виведи оновлений список подарунків.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>2: <span class="accent">Завдання 2</span></h2>
+          </div>
+          <div class="content">
+            <p>
+              Масив: let sushiMenu = ["Філадельфія", "Каліфорнія", "Спайсі
+              тунець", "Ебі темпура", "Вега рол"];
+            </p>
+            <ol>
+              <li>Видали з меню "Спайсі тунець" і "Ебі темпура".</li>
+              <li>Додай на їх місце "Дракон рол" та "Самурай рол".</li>
+              <li>Порахуй, скільки позицій у меню після змін.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section>
+          <div class="flex toggle-header">
+            <button>▶</button>
+            <h2>2: <span class="accent">Завдання 3</span></h2>
+          </div>
+          <div class="content">
+            <p>
+              Масив: let topGames = ["Minecraft", "Fortnite", "Among Us",
+              "Roblox", "Valorant"];
+            </p>
+            <ol>
+              <li>Видали "Among Us" та одай замість неї "GTA V".</li>
+              <li>Потім додай "The Sims" між "Roblox" і "Valorant".</li>
+              <li>Виведи фінальний список.</li>
+            </ol>
           </div>
         </section>
       </div>
     </main>
   </body>
 </html>
+
+<!-- <pre><code id="snippet3" class="language-javascript"></code></pre> -->
